@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2014知知网数字营销大会</title>
+    <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css">
+    <link rel="stylesheet" type="text/css" href="customer-pagepiling.css">
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+
+    </div>
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+        <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+    </ul>
+    <div id="pagepiling">
+        <div id="section-1" class="section">
+            <h1>2014中国数字营销大会</h1>
+            <h3>知知网&nbsp;PMcamp共同主办</h3>
+        </div>
+        <div id="section-2" class="section">Some section</div>
+        <div id="section-3" class="section">Some section</div>
+        <div id="section-3" class="section">Some section</div>
+        <div id="section-3" class="section">Some section</div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#pagepiling").pagepiling({
+            menu: '#menu',
+            anchors: ['page1', 'page2', 'page3','pageee'],
+            navigation: {
+                'textColor': '#666',
+                'bulletsColor': '#666',
+                'position': 'right',
+                'tooltips': ['section1', 'section2', 'section3', 'section4']
+            },
+        });
+    });
+    </script>
+</body>
+
+</html>
