@@ -467,6 +467,13 @@ header {
     background: #1C2E52;
     width: 100%;
     height: 40px;
+    position: relative;
+}
+header #menus{
+    position: absolute;
+    left:10px;
+    top:15px;
+    color:#fff;
 }
 /* ===============================================================
 Basic Swiper Styles 

@@ -9,12 +9,14 @@
         <meta name="format-detection" content="email=no" />
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" name="viewport" /> 
     <title>course</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
     <header>
-
+        <i id="menus" class="fa fa-bars"></i>
     </header>
 
     <div class="swiper-container featured">
@@ -167,18 +169,13 @@
                 slidesPerView:'auto',
                 centeredSlides: true,
                 initialSlide:7,
-                autoplay:3000,
-                tdFlow: {
-                    rotate : 30,
-                    stretch :10,
-                    depth: 150
-                }
+                autoplay:3000
             })
             //Thumbs
             $('.thumbs-cotnainer,.thumbs-2-cotnainer').each(function(){
                 $(this).swiper({
                     slidesPerView:'auto',
-                    offsetPxBefore:25,
+                    offsetPxBefore:10,
                     offsetPxAfter:10,
                     calculateHeight: true
                 })
