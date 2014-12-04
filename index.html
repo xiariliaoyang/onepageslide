@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="email=no" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" name="viewport" /> 
     <title>course</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -12,6 +16,18 @@
     <header>
 
     </header>
+
+    <div class="swiper-container featured">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(http://zhiizhii.com/public/images/slide-6.jpg?1417682456729)">
+                <a href="http://www.idangero.us" target="_blank"></a>
+            </div>
+            <div class="swiper-slide" style="background-image:url(http://zhiizhii.com/public/images/slide-3.jpg)">
+                <a href="http://www.idangero.us/sliders/moover/" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
     <div class="swiper-container thumbs-cotnainer">
         <div class="thumbs-title">最近上新课程</div>
         <div class="swiper-wrapper" style="padding-left: 25px; padding-right: 10px; width: 315px; height: 132px; transition: 0s; -webkit-transition: 0s; transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px);">
@@ -134,6 +150,16 @@
     <script type="text/javascript" src="idangerous.swiper-2.0.min.js"></script>
     <script type="text/javascript">
         $(function(){
+            var featuredSwiper = $('.featured').swiper({
+                slidesPerView:'auto',
+                centeredSlides: true,
+                initialSlide:7,
+                tdFlow: {
+                    rotate : 30,
+                    stretch :10,
+                    depth: 150
+                }
+            })
             //Thumbs
             $('.thumbs-cotnainer,.thumbs-2-cotnainer').each(function(){
                 $(this).swiper({
