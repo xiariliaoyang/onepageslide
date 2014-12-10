@@ -480,10 +480,9 @@ header #menus{
 }
 #course-category{
     width: 100%;
-    padding:20px 0;
-    min-height: 70%;
-    position: absolute;
-    top: 0;
+    padding:0;
+    position: fixed;
+    top: 40px;
     background: #263657;
     z-index: 90;
 }
@@ -493,4 +492,66 @@ header #menus{
 }
 .course-category-open{
     transform:translate3D(0,0,0);
+}
+#course-category ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+#course-category ul .step-1{
+    border-bottom: 1px solid #1F3052;
+    padding:10px;
+    color:#fff;
+    font-size: 14px;
+}
+#course-category ul .step-1:last-child{
+    border-bottom: none;
+}
+.close-category{
+    padding:10px 0;
+    text-align: center;
+}
+.close-category a{
+    border:1px solid #1C2E52;
+    background: #1C2E52;
+    border-radius: 12px;
+    padding:6px 15px;
+    font-size:14px;
+    color:#fff;
+    text-decoration: none;
+}
+.step-2 {
+    
+}
+.step-2 table{
+    width:100%;
+}
+.step-2 table tr td{
+    float: left;
+    padding:0 0 0 10px;
+}
+.step-2 table tr td:first-child{
+    width:9%;
+}
+.step-2 table tr td:first-child span{
+    background:#34415E;
+    padding:2px 0;
+    text-align: center;
+    width:100%;
+    float:left;
+    margin-top: 10px;
+    color:#fff;
+    border-radius: 4px;
+}
+.step-2 table tr td:last-child{
+    width:80%;
+    padding-top:10px;
+}
+.category-link a{
+    padding:2px 3px;
+    color:#fff;
+    text-decoration: none;
+}
+.category-tag-name-active{
+    border-bottom: 1px solid #fff;
 }
